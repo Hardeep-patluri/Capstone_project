@@ -372,20 +372,20 @@ python ingest.py
 uvicorn main:app --host 0.0.0.0 --port 7860
 Design Decisions
 
-Data Pipeline
+Data Pipeline:
 
 A web-scraping workflow was selected to demonstrate extraction, cleaning,
 transformation, persistent database storage, SQL querying, and pandas-based
 validation in one pipeline.
 
-Analytics
+Analytics:
 
 The analytics workflow separates data exploration from machine learning.
 Preprocessing is handled systematically, multiple classification models are
 compared, class imbalance is addressed explicitly, and the final fitted
 pipeline is saved for reuse.
 
-Support Assistant
+Support Assistant:
 
 A local RAG architecture was selected to demonstrate document ingestion,
 semantic retrieval, graph-based orchestration, structured outputs, and API
